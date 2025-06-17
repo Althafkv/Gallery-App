@@ -17,7 +17,7 @@ const GalleryApp = () => {
   const [error, setError] = useState(null);
   const fileInputRef = useRef(null);
 
-  const API_BASE_URL = "http://localhost:5000/api";
+  const API_BASE_URL = "https://gallery-app-69f4.vercel.app/api";
 
   // Fetch images on component mount
   useEffect(() => {

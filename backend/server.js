@@ -202,6 +202,13 @@ app.use((error, req, res, next) => {
   res.status(500).json({ error: error.message });
 });
 
+app.get('/',(req,res)=>{
+  res.send({
+    activeStatus:true,
+    error:false
+  })
+})
+
 app.listen(PORT, () => {
   console.log(`Server running on porttttt ${PORT}`);
 });
